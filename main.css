@@ -19,15 +19,15 @@ header h1 {
 nav {
     text-transform: uppercase; 
     background-color: tan; 
-    margin: 3%;
-    padding: 0.5rem; 
+    margin: 2%;
+    padding: 0.25rem; 
 }
 
 nav ul {
     justify-content: space-around;
     display: flex; 
     flex-wrap: wrap; 
-    padding: 0.5rem; 
+    padding: 0.5%; 
 }
 
 nav a {
@@ -46,3 +46,75 @@ nav a:hover {
     border-radius: 20%; 
 }
 
+.contact footer {
+    text-align: center; 
+    color: white; 
+    font-size: medium;
+    background-color: tan; 
+    padding: 0.5rem;
+    display: flex; 
+    align-items: center; 
+    justify-content: space-evenly; 
+
+}
+
+.info {
+    text-align: center; 
+    background-color: white;
+    color: tan;
+    margin: 2%;
+    font-size: xx-large; 
+}
+
+.home {
+    text-align: center;
+    background-color: white;
+    color: tan;; 
+    margin: 2%;
+    font-size: xx-large; 
+    max-width: 2%; 
+}
+
+.contact {
+    text-align: center;
+    background-color: white;
+    color: tan;; 
+    margin: 2%;
+    font-size: xx-large; 
+}
+
+.prices {
+    text-align: center;
+    background-color: white;
+    color: tan;; 
+    margin: 2%;
+    font-size: xx-large; 
+}
+
+
+.photo-gallery {
+    text-align: center;
+    background-color: white;
+    color: tan;; 
+    margin: 2%;
+    font-size: xx-large; 
+}
+
+footer {
+    text-align: center; 
+    color: white; 
+    font-size: medium;
+    background-color: tan; 
+    padding: 0.5rem;
+    display: flex; 
+    align-items: center; 
+    justify-content: space-evenly;
+}
+
+.booking {
+    text-align: center;
+    background-color: white;
+    color: tan;; 
+    margin: 2%;
+    font-size: xx-large; 
+}
