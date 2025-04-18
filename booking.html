@@ -1,39 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Booking</title>
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="reset.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking</title>
+  <link rel="stylesheet" href="reset.css"> <!-- the reset stylesheet must come FIRST. It strips away styles so it must be the first one to take away the browser's defauly styles. If it comes last then it's stripping away YOUR styles instead. -->
+  <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <div class="wrapper">
-        <header>
-        <h1>Elle Gadd Photography</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="booking.html">Booking</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="info.html">Info</a></li>
-                    <li><a href="photo-gallery.html">Photo Gallery</a></li>
-                    <li><a href="prices.html">Prices</a></li>
-                </ul>
+  <div class="wrapper">
+    <header>
+      <h1>Elle Gadd Photography</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="booking.html">Booking</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="info.html">Info</a></li>
+          <li><a href="photo-gallery.html">Photo Gallery</a></li>
+          <li><a href="prices.html">Prices</a></li>
+        </ul>
 
-            </nav>       
-        </header>
-</div>
+      </nav>
+    </header>
 
-<section class="booking">
+    <main><!-- added a <main> to hold page content -->
+      <section class="booking">
 
-<p>Click the link below to book a session with me! Send me an email with all your details and ideas for the shoot you have in mind! I cannot wait to work with you!</p>
+        <p>Click the link below to book a session with me! Send me an email with all your details and ideas for the shoot you have in mind! I cannot wait to work with you!</p>
 
 
-<img src="images/ellerosegadd.png" alt="ElleGadd">
-</body>
+        <img src="images/ellerosegadd.png" alt="ElleGadd">
 
-<footer>
-    ElleGaddPhotography © 
- </footer>
+        <!-- </body> --> <!-- the closing body tag should be right before </html>. All page content must be INSIDE the body. -->
+      </section>
+    </main>
+    
+    <footer>
+      ElleGaddPhotography ©
+    </footer>
+
+  </div> <!-- This is the correct location to close the wrapper -->
+
+</body><!-- This is the correct location -->
 </html>
