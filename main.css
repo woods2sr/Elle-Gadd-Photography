@@ -1,25 +1,39 @@
+/* Give the body a subtle background color */
+body {
+  background-color: #fff2e2;
+}
+
 .wrapper {
     margin: 1rem auto; 
-    max-width: 960px; 
+    max-width: 1000px; 
+    background-color: white; /* Define content area away from the body background color */
+    border: 1px solid silver;
+}
+
+/* Styles the entire header area */
+header {
+  background-color: darkolivegreen;
+  padding-top: 1rem;
 }
 
 header h1 {
-    background-color: darkolivegreen;
+    /* background-color: darkolivegreen; Add the background color to the entire header area, not just the h1 */
     display: flex; 
     justify-content: space-evenly;
     align-items: center; 
     color: white; 
-    padding: 1%;
+    /* padding: 1%; */
     font-size: 175%;
-    margin: 2%;
-    text-decoration: none; 
+    /* margin: 2%; */
+    margin-bottom: 1rem;
+    /* text-decoration: none; This property gets rid of underlines, but h1 text isn't underlined  */
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 nav {
     text-transform: uppercase; 
     background-color: tan; 
-    margin: 2%;
+    /* margin: 2%; */
     padding: 0.25rem; 
 }
 
@@ -27,18 +41,19 @@ nav ul {
     justify-content: space-around;
     display: flex; 
     flex-wrap: wrap; 
-    padding: 0.5%; 
+    /* padding: 0.5%;  */
 }
 
 nav a {
     text-decoration: none;
     color: darkolivegreen;
     font-family: 'Times New Roman', Times, serif;
+    padding: 1rem; /* Adding padding here makes the clickable area larger */
 }
 
 nav li {
     list-style-type: none;
-    padding: 1rem 1rem; 
+    padding: 1rem; 
 }
 
 nav a:hover {
@@ -46,58 +61,44 @@ nav a:hover {
     border-radius: 20%; 
 }
 
-.contact footer {
-    text-align: center; 
-    color: white; 
-    font-size: medium;
-    background-color: tan; 
-    padding: 0.5rem;
-    display: flex; 
-    align-items: center; 
-    justify-content: space-evenly; 
 
+
+/* Every page now has a <main> so this is where you can control the main content on EVERY page. */
+main {
+  font-size: 145%;
+  line-height: 1.5;
+  margin: 1rem 2rem;
+  color: #473a29;
+}
+
+
+.home {
+    text-align: left; /* Center aligned text is ok for small bits of text, but it's hard to read in large paragraphs */
+    background-color: white;
+    /* max-width: 2%;  */
+    /* Your text was all smushed because you set the maximum width of the home text area at only 2% wide.
+     */
 }
 
 .info {
-    text-align: center; 
-    background-color: white;
-    color: tan;
-    margin: 2%;
-    font-size: xx-large; 
-}
-
-.home {
-    text-align: center;
-    background-color: white;
-    color: tan;; 
-    margin: 2%;
-    font-size: xx-large; 
-    max-width: 2%; 
+  background-color: white;
 }
 
 .contact {
-    text-align: center;
     background-color: white;
-    color: tan;; 
-    margin: 2%;
-    font-size: xx-large; 
 }
 
 .prices {
-    text-align: center;
     background-color: white;
-    color: tan;; 
-    margin: 2%;
-    font-size: xx-large; 
 }
 
 
 .photo-gallery {
-    text-align: center;
     background-color: white;
-    color: tan;; 
-    margin: 2%;
-    font-size: xx-large; 
+}
+
+.booking {
+
 }
 
 footer {
@@ -106,15 +107,21 @@ footer {
     font-size: medium;
     background-color: tan; 
     padding: 0.5rem;
-    display: flex; 
+    /* ⬇︎ If you're just trying to center the text you don't need any of this stuff. Just the text-align: center will do */
+    /* display: flex; 
     align-items: center; 
-    justify-content: space-evenly;
+    justify-content: space-evenly; */
 }
 
-.booking {
-    text-align: center;
-    background-color: white;
-    color: tan;; 
-    margin: 2%;
-    font-size: xx-large; 
+.contact footer {
+  text-align: center; 
+  color: white; 
+  font-size: medium;
+  background-color: tan; 
+  padding: 0.5rem;
+  display: flex; 
+  align-items: center; 
+  justify-content: space-evenly; 
+
 }
+
