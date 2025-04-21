@@ -78,10 +78,13 @@ main {
 .home {
     text-align: left;
     background-color: white;
-    color: tan;; 
+    color: tan; 
     margin: 2%;
     font-size: xx-large;  
     align-items: center; 
+    display: flex; 
+    justify-content: center;
+    flex-direction: column;
 }
 
 .contact {
@@ -89,6 +92,9 @@ main {
     color: tan; 
     font-size: xx-large;
     align-items: center; 
+    display: flex; 
+    justify-content: center;
+    flex-direction: column;
 }
 
 .prices {
@@ -96,6 +102,9 @@ main {
    color: tan; 
     font-size: xx-large;
     align-items: center; 
+    display: flex; 
+    justify-content: center;
+    flex-direction: column;
 }
 
 
@@ -105,6 +114,9 @@ main {
     color: tan; 
     font-size: xx-large;
     align-items: center; 
+    display: flex; 
+    justify-content: center;
+    flex-direction: column;
 }
 
 
@@ -113,10 +125,26 @@ main {
     color: tan; 
     font-size: xx-large;
     align-items: center; 
+    display: flex; 
+    justify-content: center;
+    flex-direction: column;
+}
+
+.info {
+    background-color: white;
+    color: tan; 
+    font-size: xx-large;
+    align-items: center; 
+    display: flex; 
+    justify-content: center;
+    flex-direction: column;
 }
 
 .elleandarchie {
     align-items: center; 
+    display: flex; 
+    justify-content: center;
+    flex-direction: column;
 }
 
 footer {
@@ -127,6 +155,15 @@ footer {
     padding: 0.5rem;
     align-items: center; 
     justify-content: space-evenly;
+    display: flex;
+    flex-wrap: wrap; 
+}
+
+.email {
+    color: white;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    align-items: center;
 }
 
 
