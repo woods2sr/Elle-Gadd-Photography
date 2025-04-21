@@ -101,9 +101,9 @@ main {
    background-color: white;
    color: tan; 
     font-size: xx-large;
-    align-items: center; 
+    align-items: left; 
     display: flex; 
-    justify-content: center;
+    justify-content: left;
     flex-direction: column;
 }
 
@@ -140,12 +140,6 @@ main {
     flex-direction: column;
 }
 
-.elleandarchie {
-    align-items: center; 
-    display: flex; 
-    justify-content: center;
-    flex-direction: column;
-}
 
 footer {
     text-align: center; 
