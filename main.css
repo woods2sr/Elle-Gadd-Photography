@@ -1,6 +1,7 @@
 
 body {
-    background-color: #fff2e2;
+    background-color: #f0e4d5; /* Made this darker so it's not the same color as inside your wrapper */
+    font-family: Georgia, 'Times New Roman', Times, serif; /* It's better to declar the base font in a parent element like body than to apply it to multiple elements individually */
 }
 
 
@@ -17,27 +18,30 @@ body {
 header {
     background-color: darkolivegreen;
     padding-top: 1rem; 
+    text-align: center; /* This is an easier way to center the text inside the header */
 }
 
 
 header h1 {
     background-color: darkolivegreen;
-    display: flex; 
+    /* display: flex; 
     justify-content: space-evenly;
-    align-items: center; 
+    align-items: center;  */
+    /* Grid and flex should be inside of a container and you turn that container into the grid or flexbox. You shouldn't turn an element like h1 into a grid or flex.  */
     color: white; 
-    padding: 1%;
+    /* padding: 1%; You don't need to add padding */
     font-size: 175%;
-    margin: 2%;
-    margin-bottom: 1rem; 
-    text-decoration: none; 
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* margin: 2%; You're adding a margin here... 
+    /* margin-bottom: 1rem; and then another margin here. There's no need to add it twice.  */
+    margin-bottom: 1rem; /* This is a better unit of measurement than % for sizing on a desktop */
+    /* text-decoration: none; This gets rid of underlines. The h1 element doesn't have an underline to get rid of */
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */ /* Move this up to the body */
 }
 
 nav {
     text-transform: uppercase; 
     background-color: tan; 
-    margin: 2%;
+    /* margin: 2%; */
     padding: 0.25rem; 
 }
 
@@ -68,7 +72,8 @@ nav a:hover {
 }
 
 main {
-    font-size: 100%;
+    /* font-size: 100%; */ /* Everything was already made 100% in the reset stylesheet, so this doesn't change the size at all */
+    font-size: 125%; /* This is a better size */
     line-height: 1.5; 
     margin: 1rem 2rem; 
     color: #473a29; 
@@ -76,47 +81,61 @@ main {
 
 
 .home {
-    text-align: left;
-    background-color: white;
-    color: tan;; 
-    margin: 2%;
-    font-size: xx-large;  
+    /* text-align: left; */ /* It's already left aligned */
+    /* background-color: white; */ /* This makes your page look too segmented */
+    /* color: tan; */ /* This doesn't have much contrast against the background */
+    /* margin: 2%; */
+    /* font-size: xx-large; */ /* It's better to size your text with a % or a rem size than with generic keywords like xx-large */
     align-items: center; 
 }
 
+/* ⬇️ You're repeating these styles over and over again for each page. It's must more efficient to just write style rules for the <main> element so that all pages will be updated instead of making new sections on each page and having the apply the same style rules to each of them. */
+
 .contact {
-    background-color: white;
+    /* background-color: white;
     color: tan; 
     font-size: xx-large;
-    align-items: center; 
+    align-items: center;  */
 }
 
 .prices {
-   background-color: white;
+   /* background-color: white;
    color: tan; 
     font-size: xx-large;
-    align-items: center; 
+    align-items: center;  */
 }
 
 
 
 .photo-gallery {
-    background-color: white;
+    /* background-color: white;
     color: tan; 
     font-size: xx-large;
-    align-items: center; 
+    align-items: center;  */
 }
 
 
 .booking {
-    background-color: white;
+    /* background-color: white;
     color: tan; 
-    font-size: xx-large;
-    align-items: center; 
+    font-size: xx-large; */
+    /* align-items: center; */  /* align-items only works in a grid or flex container */
 }
 
+/* ⬆️ You're repeating these styles over and over again for each page. It's must more efficient to just write style rules for the <main> element so that all pages will be updated instead of making new sections on each page and having the apply the same style rules to each of them. */
+
+
+/* ⬇️ Instead of making a class for each image, it's better to make a general style that can be used on any image you want to look a certain way  */
 .elleandarchie {
-    align-items: center; 
+    align-items: center; /* this only works inside a grid or flex container */
+}
+
+/* ⬇️ This is a better way to center an image and this class can be applied to ANY image you want to center on the page.  */
+.pic-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid silver;
 }
 
 footer {
